@@ -1,0 +1,56 @@
+
+body {
+    background-image: linear-gradient(#01B3ED, #B34E7E);
+}
+
+h1 {
+    text-align: center;
+    font-size: x-large;
+    background: -webkit-linear-gradient(#FFF8B8, #B34E7E);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'Gugi', cursive;
+}
+
+p {
+    display:none;
+}
+
+#story {
+    font-size: x-large;
+}
+
+#elucidate {
+    display:none;
+    background-color: transparent;
+    border: 1px solid #01B3ED;
+    color: #01B3ED;
+    cursor: crosshair;
+    margin-bottom: 20px;
+    font-family: 'Gugi', cursive;
+}
+
+#elucidate:hover {
+    border: 2px solid #FFFFFF;
+    color: #FFFFFF;
+    font-family: 'Gugi', cursive;
+}
+
+#submit-story {
+    background-color: transparent;
+    border: 1px solid #01B3ED;
+    color: #01B3ED;
+    cursor: crosshair;
+    font-family: 'Gugi', cursive;
+}
+
+#submit-story:hover {
+    border: 2px solid #FFFFFF;
+    color: #FFFFFF;
+    font-family: 'Gugi', cursive;
+}
+
+
+
+/*#FFF8B8*/
+

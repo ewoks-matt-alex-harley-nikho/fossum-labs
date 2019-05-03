@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="fossum-madlib-lab.css">
+    <link href="https://fonts.googleapis.com/css?family=Gugi|Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Good evening</title>
+</head>
+<body>
+
+<div class="row title">
+    <div class="col-1"></div>
+    <div class="col-10">
+        <h1>Madlibus Obscurus</h1>
+    </div>
+    <div class="col-1"></div>
+</div>
+
+<!--Madlib form-->
+
+<div class="row">
+    <div class="col-1"></div>
+    <div class="col-10">
+        <form class="story-form" id="story-form">
+            <input class="form-control mainName" id="name" type="text" placeholder="name (male)"><br>
+            <input class="form-control number-1" id="number-1" type="text" placeholder="number"><br>
+            <input class="form-control number-2" id="number-2" type="text" placeholder="number"><br>
+            <input class="form-control emotion" id="emotion" type="text" placeholder="emotion"><br>
+            <input class="form-control relative-1" id="relative-1" type="text" placeholder="relative"><br>
+            <input class="form-control relative-2" id="relative-2" type="text" placeholder="relative"><br>
+            <input class="form-control nouns" id="nouns" type="text" placeholder="plural noun"><br>
+            <input class="form-control place" id="place" type="text" placeholder="a place"><br>
+            <input class="form-control adj-1" id="adj-1" type="text" placeholder="adjective"><br>
+            <input class="form-control adj-2" id="adj-2" type="text" placeholder="adjective"><br>
+            <input class="form-control adj-3" id="adj-3" type="text" placeholder="adjective"><br>
+            <input class="form-control adj-4" id="adj-4" type="text" placeholder="adjective"><br>
+            <input class="form-control clothing" id="clothing" type="text" placeholder="singular article of clothing"><br>
+            <input class="form-control tv" id="tv" type="text" placeholder="tv personality"><br>
+            <input class="form-control flower" id="flower" type="text" placeholder="flower"><br>
+            <input class="form-control fish" id="fish" type="text" placeholder="fish"><br>
+            <input class="form-control disaster" id="disaster" type="text" placeholder="famous disaster"><br>
+        </form>
+        <button type="submit" class="form-control btn-block" id="submit-story">Lib it!</button>
+    </div>
+    <div class="col-1"></div>
+</div>
+
+<!--Madlib output goes below-->
+
+<div class="row">
+    <div class="col-1"></div>
+    <div class="col-10" id="madStory">
+        <br><br>
+        <p id="story">
+            <span class="mainName"></span> is <span class="emotion"></span>.
+            When <span class="mainName"></span> was <span class="number-1"></span>
+            months old, his <span class="relative-1"></span> left him. <span class="mainName"></span>
+            always felt different from the other <span class="nouns"></span> at <span class="place"></span>.
+            He felt <span class="adj-1"></span>. Somehow <span class="adj-2"></span>,
+            <span class="adj-3"></span>, unlike them, <span class="adj-4"></span>, not the same.
+            <span class="mainName"></span>'s <span class="relative-2"></span> died when he was
+            only <span class="number-2"></span>. <span class="mainName"></span> developed a
+            passion for broadcaster and TV presenter <span class="tv"></span>. He vowed to
+            strive always to be worthy of him. <span class="mainName"></span> wears a
+            <span class="clothing"></span> in an odd but caring way. You can trust him with a
+            <span class="flower"></span> and a <span class="fish"></span>. <br>
+            <span class="mainName"></span> designed <span class="disaster"></span>.
+        </p>
+    </div>
+    <div class="col-1"></div>
+</div>
+
+<div class="row" id="confusion">
+    <div class="col-1"></div>
+    <div class="col-10">
+        <button type="submit" class="form-control btn-block" id="elucidate" onclick="questionable()">Confused?</button>
+    </div>
+    <div class="col-1"></div>
+</div>
+
+<!--Scripts-->
+<script src="jquery-2.2.4.js"></script>
+<script src="fossum-madlib-lab.js"></script>
+</body>
+</html>
