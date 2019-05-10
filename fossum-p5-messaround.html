@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body {
+            background-color: #01B3ED;
+        }
+    </style>
+</head>
+<body>
+
+<div id="loading" class="loading">...</div>
+
+<div class="drawing-canvas"></div>
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/p5.js"></script>
+<script src="sketch.js"></script>
+<script src="/path/to/howler.js"></script>
+<script>
+
+    // let sound = new Howl({
+    //     src: ['sound.webm', 'sound.mp3'],
+    //     autoplay: true,
+    //     loop: true,
+    //     volume: 0.5,
+    //     onend: function() {
+    //         console.log("done-zo");
+    //     }
+    // });
+    //
+    // sound.once("click", function() {
+    //     $
+    // });
+
+
+     function setup() {
+         createCanvas(900, 500);
+     }
+
+     function draw() {
+         if (mouseIsPressed) {
+             fill(0);
+         } else {
+             fill(255);
+         }
+         ellipse(mouseX, mouseY, 80, 80);
+     }
+
+
+
+
+
+</script>
+</body>
+</html>

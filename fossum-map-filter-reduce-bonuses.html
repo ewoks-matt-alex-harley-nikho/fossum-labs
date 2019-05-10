@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Map Filter Reduce Bonus</title>
+</head>
+<body>
+
+
+
+<script src="jquery-2.2.4.js"></script>
+<script>
+    "use strict";
+
+    //Problem 1
+    //
+    //   - create an array of the first letters of each fruit
+    //   HINT - use .map()
+
+    var fruits = ["cantaloupe", "orange", "date", "elderberry", "ugli fruit", "pineapple"];
+
+    var firstLetter = fruits.map(function(n) {
+        return n[0];
+    });
+    console.log(firstLetter);
+
+
+    var customers = [
+        {
+            name: "Fred",
+            age: 58,
+            occupation: "Police Officer",
+            noOfPurchases: 4
+        },
+        {
+            name: "Samantha",
+            age: 54,
+            occupation: "Teacher",
+            noOfPurchases: 18
+        },
+        {
+            name: "Charles",
+            age: 38,
+            occupation: "Librarian",
+            noOfPurchases: 9
+        }
+    ];
+
+    //   - create array of user objects based on the customers array of objects
+    //   (each user object should just have name and age properties)
+    //   HINT - use .map()
+
+    var nameAgeArr = [];
+
+    var nameAge = customers.map(function(i) {
+        nameAgeArr.push(i.name);
+        nameAgeArr.push(i.age);
+    });
+
+    console.log("***********");
+    console.log(nameAgeArr);
+
+    //   - create an array of civil servant customers (teachers and police officers)
+    //   containing the same properties as the objects on the customers objects
+    //   HINT - use .filter()
+
+
+    var civilArr = [];
+
+    function civilServants(customers) {
+        if (customers.occupation === "Teacher" || "Police Officer") {
+            // return customers.name;
+            civilArr.push(customers.name);
+        }
+    }
+
+    var jobs = customers.filter(civilServants);
+
+    console.log("***********");
+    console.log(jobs);
+    console.log("***********");
+    console.log(civilArr);
+
+    //   - determine the average age of customers
+    //   HINT - use .reduce()
+
+    var totalAge = customers.reduce(function(totAge, customer) {
+        return totAge + customer.age;
+    }, 0);
+
+    console.log("***********");
+    console.log(totalAge/customers.length);
+
+
+    //  Problem 2
+    //
+    // Given the following array...
+    //
+        let names = ["Morticia", "Gomez", "Wednesday", "Pugsley", "Itt", "It"];
+    //
+    // complete the bonuses below...
+    //
+    // - Create an array where all names are given a last name of Smith.
+
+    let surname = names.map(function(x) {
+        return x + " Addams";
+    });
+
+    console.log("***********");
+    console.log(surname);
+
+    // - Create an array where each word is in all caps
+
+    let allCapsNames = names.map(function(x) {
+            return x.toUpperCase();
+    });
+
+    console.log("***********");
+    console.log(allCapsNames);
+
+    // - Create an array where all names have more than 3 letters
+
+    let longNames = {};
+
+    console.log("***********");
+    console.log(longNames);
+
+
+    // - Create an array of names with only the last two letters of each name
+
+    // - Create a total count of all letters
+
+    // - Create a string of all letters in alphabetical order
+
+    // - Create an array of word objects with properties of wordLength,
+    //   firstLetter, lastLetter
+
+    // - Create a string of all vowels in the entire array of names
+
+    // - Create a single object with properties
+
+
+
+
+    // Problem 3
+    //
+    // Given the following array...
+
+        var family = [
+        {
+            name: "Karen",
+            gender: "female",
+            age: 29
+        },
+        {
+            name: "Summer",
+            gender: "female",
+            age: 10
+        },
+        {
+            name: "Bob",
+            gender: "male",
+            age: 32
+        }
+    ];
+
+    // complete the bonuses below...
+    //
+    // - Calculate the average age of family members
+
+    const averageAge = family.reduce(function(ages, family) {
+        return (ages + family.age) / family.length;
+    });
+
+    console.log("***********");
+    console.log(averageAge);
+
+
+    // - Create an array of family objects without the age property
+
+
+
+    // - Create an array of all minors
+
+    // - Calculate the total age combined of family members
+
+    // - Create an array of only female family member objects
+
+    // - Create a single object with properties containing arrays of all names,
+    //   genders, and ages
+
+
+
+
+    //  FETCH BONUS ONE
+    //
+    // In your data directory, create a profiles.json file with the following...
+    // {
+    //     "sandy123": "brown",
+    //     "bob234": "green",
+    //     "sally345": "blue"
+    // }
+    // Add an input field and submit button (you will need to prevent the default
+    // behaviour) that when clicked, runs the following function...
+
+    // Create a function that takes in a username and fetch's the color preference
+    // based on the username and sets the background color to that color.
+
+
+    //  FETCH BONUS TWO
+    //
+    // Using the Star Wars API, log the first film a Star Wars character's homeworld
+    // appeared in
+
+
+    //  FETCH BONUS THREE
+    //
+    // Using the GitHub API and reduce(), find the average hour of the last three pushes.
+    // Ignore minutes.
+
+
+    //  FETCH BONUS FOUR
+    //
+    // Create star-chars.json file in your data folder and paste in the following...
+    //
+    // [
+    //     {
+    //         "name": "Rey",
+    //         "coolness": 9
+    //     },
+    //     {
+    //         "name": "Luke Skywalker",
+    //         "coolness": 9
+    //     },
+    //     {
+    //         "name": "Darth Vader",
+    //         "coolness": 10
+    //     }
+    // ]
+    //
+    // Create a function that fetches this array and returns an array of homeworlds for the characters.
+    // It will look something like the following...
+    //     ['Jakku', 'Tatooine', 'Tatooine']
+
+
+
+
+
+
+
+
+
+</script>
+</body>
+</html>
